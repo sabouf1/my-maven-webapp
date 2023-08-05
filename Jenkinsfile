@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Use the SSH key for deployment
-                    withCredentials([sshUserPrivateKey(credentialsId: '${SSH_CREDENTIALS_ID}', keyFileVariable: 'SSH_KEY')]) {
+                    withCredentials([sshUserPrivateKey(credentialsId: "${SSH_CREDENTIALS_ID}", keyFileVariable: "SSH_KEY")]) {
                         sh "scp -i $SSH_KEY target/my-maven-webapp.war ec2-user@${EC2_INSTANCE_ID}:${TOMCAT_WEBAPP_DIR}"
                     }
                 }
