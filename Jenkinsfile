@@ -19,7 +19,11 @@ pipeline {
                 sh "mvn clean package"
             }
         }
-
+        stage("Approve Deployment"){
+            steps{
+                input 'Are you OK with the new changes ?'    
+            }
+        }
         stage('Deploy to EC2') {
             steps {
                 script {
