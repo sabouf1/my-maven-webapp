@@ -6,7 +6,7 @@ pipeline {
         EC2_INSTANCE_ID = 'i-05af0909d4703bc17'
         EC2_REGION = 'us-east-1'
         TOMCAT_WEBAPP_DIR = '/opt/tomcat/webapps'
-        SSH_CREDENTIALS_ID = '1c32d2fa-caee-48c0-a0eb-e34e58ac5782'
+        SSH_CREDENTIALS_ID = '319bc701-e074-4173-bd41-9bd1fec5ea7f'
     }
 
     stages {
