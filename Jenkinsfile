@@ -8,10 +8,10 @@ pipeline {
             }
         }
         stage('Deploy Approval') { 
-	        steps { 
+	    steps { 
 		        input message: 'Do you want to proceed with deployment?', ok: 'Deploy’ 
 	    } 
-}
+	}
 
         stage('Deploy to EC2') {
             steps {
