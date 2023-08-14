@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Welcome to my first CD project</h1>
+        <h1 class="text-center mb-4">Devops Metro College</h1>
         
         <div class="row mt-4">
             <div class="col-md-6">
