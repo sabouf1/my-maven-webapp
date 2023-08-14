@@ -7,6 +7,11 @@ pipeline {
                 sh "mvn clean package"
             }
         }
+        stage('Deploy Approval') { 
+	        steps { 
+		        input message: 'Do you want to proceed with deployment?', ok: 'Deploy’ 
+	    } 
+}
 
         stage('Deploy to EC2') {
             steps {
